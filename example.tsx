@@ -1,19 +1,19 @@
 /*
 npm install --save subjects-ts
 Replace the first line below with:
-/// <reference path="subjects-ts" />
+/// <reference path='subjects-ts' />
 tsconfig.json:
-"jsx": "react",
-"jsxFactory": "Subjects.SubjectProcessor"
+'jsx': 'react',
+'jsxFactory': 'Subjects.SubjectProcessor'
 */
-/// <reference path="./index.d.ts" />
+/// <reference path='./index.d.ts' />
 
 let sub = Subjects.SubjectObject<string>();
-sub("My first SubjectObject");
+sub('My first SubjectObject');
 console.log(sub());
 sub.AddCallback(value => console.log('callback1:', value));
 sub.AddCallback(value => console.log('callback2:', value));
-sub("Callback is called");
+sub('Callback is called');
 console.log(sub());
 let sa = new Subjects.SubjectArray<string>();
 sa.Push('a');

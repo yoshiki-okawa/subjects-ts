@@ -17,20 +17,20 @@ See example.tsx and example.html for live examples.
 ### Minimal example of SubjectObject
 
 ```js
-/// <reference types="subjects-ts" />
+/// <reference types='subjects-ts' />
 let sub = Subjects.SubjectObject<string>();
-sub("My first SubjectObject");
+sub('My first SubjectObject');
 console.log(sub());
 sub.AddCallback(value => console.log('callback1:', value));
 sub.AddCallback(value => console.log('callback2:', value));
-sub("Callback is called");
+sub('Callback is called');
 console.log(sub());
 ```
 
 ### Minimal example of SubjectArray
 
 ```js
-/// <reference types="subjects-ts" />
+/// <reference types='subjects-ts' />
 let sa = new Subjects.SubjectArray<string>();
 sa.Push('a');
 let mapped = sa.Map(x => console.log(x));
@@ -40,7 +40,7 @@ mapped.AddCallbackToOriginalSubjectArray('Push', str => mapped.ExecuteMapFunctio
 ### Browser Example
 example.tsx
 ```jsx
-/// <reference types="subjects-ts" />
+/// <reference types='subjects-ts' />
 
 class Todo {
 	public Subject = Subjects.SubjectObject<string>();
@@ -85,8 +85,8 @@ example.html
 <html>
 
 <body>
-	<script type="text/javascript" src="out.js"></script>
-	<!--<script type="text/javascript" src="out.min.js"></script>-->
+	<script type='text/javascript' src='out.js'></script>
+	<!--<script type='text/javascript' src='out.min.js'></script>-->
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 namespace Subjects {
-	type MethodName = "Set" | "Remove" | "Push" | "Clear";
+	type MethodName = 'Set' | 'Remove' | 'Push' | 'Clear';
 	export class SubjectArray<T> {
 		private _arr: T[] = [];
 		private _callbacks = { Push: [], Remove: [], Set: [], Clear: [] };

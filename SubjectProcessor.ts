@@ -22,16 +22,16 @@ namespace Subjects {
 			return arr;
 		}
 		else if (value instanceof SubjectArray) {
-			value.AddCallbackToOriginalSubjectArray("Push", (todo) => {
+			value.AddCallbackToOriginalSubjectArray('Push', (todo) => {
 				a.appendChild(value.ExecuteMapFunction(todo));
 			});
-			value.AddCallbackToOriginalSubjectArray("Set", (index, todo) => {
+			value.AddCallbackToOriginalSubjectArray('Set', (index, todo) => {
 				a.replaceChild(value.ExecuteMapFunction(todo), a.childNodes[index]);
 			});
-			value.AddCallbackToOriginalSubjectArray("Remove", (index) => {
+			value.AddCallbackToOriginalSubjectArray('Remove', (index) => {
 				a.removeChild(a.childNodes[index]);
 			});
-			value.AddCallbackToOriginalSubjectArray("Clear", () => RemoveAllChildren(a));
+			value.AddCallbackToOriginalSubjectArray('Clear', () => RemoveAllChildren(a));
 			let arr = [];
 			value.ForEach(x => SubjectProcessorInternal(x, a).forEach(y => arr.push(y)));
 			return arr;
