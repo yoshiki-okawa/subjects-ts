@@ -4,6 +4,12 @@ Subjects.ts is very simple typescript utilities using Subject pattern (Observer 
 
 Main focus of this project is to move away from 
 
+## Usage
+
+```cmd
+npm install --save subjects-ts
+```
+
 ## Examples
 
 See example.tsx and example.html for live examples.
