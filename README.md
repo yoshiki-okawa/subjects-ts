@@ -17,7 +17,7 @@ See example.tsx and example.html for live examples.
 ### Minimal example of SubjectObject
 
 ```js
-/// <reference path="subjects-ts" />
+/// <reference types="subjects-ts" />
 let sub = Subjects.SubjectObject<string>();
 sub("My first SubjectObject");
 console.log(sub());
@@ -30,7 +30,7 @@ console.log(sub());
 ### Minimal example of SubjectArray
 
 ```js
-/// <reference path="subjects-ts" />
+/// <reference types="subjects-ts" />
 let sa = new Subjects.SubjectArray<string>();
 sa.Push('a');
 let mapped = sa.Map(x => console.log(x));
@@ -40,7 +40,7 @@ mapped.AddCallbackToOriginalSubjectArray('Push', str => mapped.ExecuteMapFunctio
 ### Browser Example
 example.tsx
 ```jsx
-/// <reference path="subjects-ts" />
+/// <reference types="subjects-ts" />
 
 class Todo {
 	public Subject = Subjects.SubjectObject<string>();
