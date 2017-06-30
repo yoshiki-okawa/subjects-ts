@@ -2,7 +2,7 @@
 
 Subjects.ts is very simple typescript utilities using Subject pattern (Observer and Observable) based on TSX (JSX).
 
-Main focus of this project is to move away from 
+Main goal of this project is to help web application development without learning huge front end frameworks.
 
 ## Usage
 
