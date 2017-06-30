@@ -91,6 +91,20 @@ example.html
 
 </html>
 ```
+tsconfig.json
+```json
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "amd",
+		"outFile": "out.js",
+		"jsx": "react",
+		"jsxFactory": "Subjects.SubjectProcessor",
+		"sourceMap": true,
+		"lib": ["es6", "dom"]
+	}
+}
+```
 
 ## API
 
@@ -126,7 +140,7 @@ example.html
 
 	* ### SubjectProcessor()
 		This is example jsx factory function you can specify as "jsxFactory" in tsConfig.json.
-		```js
+		```json
 		"jsxFactory": "Subjects.SubjectProcessor"
 		```
 
