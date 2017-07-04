@@ -1,6 +1,6 @@
 {
 	"name": "subjects-ts",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Tiny typescript utilities using Subject pattern (Observer and Observable) based on TSX (JSX).",
 	"main": "index.d.ts",
 	"types": "index.d.ts",
