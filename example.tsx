@@ -1,12 +1,13 @@
 /*
 npm install --save subjects-ts
 Replace the first line below with:
-/// <reference path='subjects-ts' />
+import Subjects = require('subjects-ts');
 tsconfig.json:
 'jsx': 'react',
 'jsxFactory': 'Subjects.SubjectProcessor'
 */
-/// <reference path='./index.d.ts' />
+import Subjects = require('./index');
+
 function Main(err: Error) {
 	if (err)
 		throw err;

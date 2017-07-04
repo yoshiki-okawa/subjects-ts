@@ -4,7 +4,7 @@ Subjects.ts is very simple typescript utilities using Subject pattern (Observer 
 
 Main goal of this project is to help web application development without learning huge front end frameworks.
 
-## Usage
+## Install
 
 ```cmd
 npm install --save subjects-ts
@@ -17,7 +17,7 @@ See example.tsx and example.html for live examples.
 ### Minimal example of SubjectObject
 
 ```js
-/// <reference types='subjects-ts' />
+import Subjects = require('./index');
 let sub = Subjects.SubjectObject<string>();
 sub('My first SubjectObject');
 console.log(sub());
@@ -30,7 +30,7 @@ console.log(sub());
 ### Minimal example of SubjectArray
 
 ```js
-/// <reference types='subjects-ts' />
+import Subjects = require('./index');
 let sa = new Subjects.SubjectArray<string>();
 sa.Push('a');
 let mapped = sa.Map(x => console.log(x));
@@ -40,7 +40,7 @@ mapped.AddCallbackToOriginalSubjectArray('Push', str => mapped.ExecuteMapFunctio
 ### Browser Example
 example.tsx
 ```jsx
-/// <reference types='subjects-ts' />
+import Subjects = require('./index');
 
 class Todo {
 	public Subject = Subjects.SubjectObject<string>();
@@ -96,7 +96,7 @@ tsconfig.json
 {
 	"compilerOptions": {
 		"target": "es5",
-		"module": "amd",
+		"module": "commonjs",
 		"outFile": "out.js",
 		"jsx": "react",
 		"jsxFactory": "Subjects.SubjectProcessor",

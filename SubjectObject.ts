@@ -1,37 +1,37 @@
-namespace Subjects {
-	export function SubjectObject<T>(): ISubjectObject {
-		let f = function (value?: T) {
-			let argCount = arguments.length;
+import ISubjectObject = require('./ISubjectObject');
 
-			if (arguments.length === 0)
-				return f['value'];
+export = function SubjectObject<T>(): ISubjectObject {
+	let f = function (value?: T) {
+		let argCount = arguments.length;
 
-			f['value'] = value;
+		if (arguments.length === 0)
+			return f['value'];
 
-			let funcs = f['funcs'];
+		f['value'] = value;
 
-			if (funcs && funcs.length > 0)
-				funcs.forEach(x => x(value));
-		} as ISubjectObject;
+		let funcs = f['funcs'];
 
-		f.IsSubject = true;
+		if (funcs && funcs.length > 0)
+			funcs.forEach(x => x(value));
+	} as ISubjectObject;
 
-		f.AddCallback = callback => {
-			let funcs = f['funcs'] = f['funcs'] || [];
-			funcs.push(callback);
-		};
+	f.IsSubject = true;
 
-		f.RemoveCallback = callback => {
-			let funcs = f['funcs'];
-			if (!funcs)
-				return;
+	f.AddCallback = callback => {
+		let funcs = f['funcs'] = f['funcs'] || [];
+		funcs.push(callback);
+	};
 
-			let index = funcs.indexOf(callback);
+	f.RemoveCallback = callback => {
+		let funcs = f['funcs'];
+		if (!funcs)
+			return;
 
-			if (index >= 0)
-				funcs.splice(index, 1);
-		};
+		let index = funcs.indexOf(callback);
 
-		return f;
-	}
-}
+		if (index >= 0)
+			funcs.splice(index, 1);
+	};
+
+	return f;
+};
