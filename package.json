@@ -1,36 +1,36 @@
 {
-  "name": "subjects-ts",
-  "version": "1.0.4",
-  "description": "Tiny typescript utilities using Subject pattern (Observer and Observable) based on TSX (JSX).",
-  "main": "index.d.ts",
-  "types": "index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yoshiki-okawa/subjects-ts.git"
-  },
-  "bugs": {
-    "url": "https://github.com/yoshiki-okawa/subjects-ts/issues"
-  },
-  "scripts": {},
-  "keywords": [
-    "subject",
-    "observer",
-    "observable",
-    "tsx",
-    "jsx",
-    "typescript"
-  ],
-  "author": "Yoshiki Okawa",
-  "license": "MIT",
-  "devDependencies": {
-    "browserify": "^14.4.0",
-    "gulp": "^3.9.1",
-    "gulp-sourcemaps": "^2.6.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-util": "^3.0.8",
-    "tsify": "^3.0.1",
-    "typescript": "^2.4.1",
-    "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
-  }
+	"name": "subjects-ts",
+	"version": "1.0.4",
+	"description": "Tiny typescript utilities using Subject pattern (Observer and Observable) based on TSX (JSX).",
+	"main": "index.d.ts",
+	"types": "index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yoshiki-okawa/subjects-ts.git"
+	},
+	"bugs": {
+		"url": "https://github.com/yoshiki-okawa/subjects-ts/issues"
+	},
+	"scripts": {},
+	"keywords": [
+		"subject",
+		"observer",
+		"observable",
+		"tsx",
+		"jsx",
+		"typescript"
+	],
+	"author": "Yoshiki Okawa",
+	"license": "MIT",
+	"devDependencies": {
+		"browserify": "^14.4.0",
+		"gulp": "^3.9.1",
+		"gulp-sourcemaps": "^2.6.0",
+		"gulp-uglify": "^3.0.0",
+		"gulp-util": "^3.0.8",
+		"tsify": "^3.0.1",
+		"typescript": "^2.4.1",
+		"vinyl-buffer": "^1.0.0",
+		"vinyl-source-stream": "^1.1.0"
+	}
 }

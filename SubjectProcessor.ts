@@ -1,5 +1,5 @@
-import ISubjectObject = require('./ISubjectObject');
-import SubjectArray = require('./SubjectArray');
+import { ISubjectObject } from './ISubjectObject';
+import { SubjectArray } from './SubjectArray';
 
 function RemoveAllChildren(elem: Element) {
 	let child = elem.firstChild;
@@ -58,7 +58,7 @@ function SubjectProcessorInternal(value: any, a: HTMLElement): any[] {
 	}
 }
 
-export = function SubjectProcessor() {
+export function SubjectProcessor() {
 	let arr = Array.from(arguments);
 	let tag: string = arr[0];
 	let attrs: any = arr[1];

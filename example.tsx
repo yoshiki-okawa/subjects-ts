@@ -6,7 +6,7 @@ tsconfig.json:
 'jsx': 'react',
 'jsxFactory': 'Subjects.SubjectProcessor'
 */
-import Subjects = require('./index');
+import * as Subjects from './index';
 
 function Main(err: Error) {
 	if (err)

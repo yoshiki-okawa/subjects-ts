@@ -10,7 +10,7 @@ function LoadScript(src: string, done: (err: Error) => void) {
 	document.head.appendChild(js);
 }
 
-export = class Utils {
+export class Utils {
 	public static RunWithPolyfill(main: (err: Error) => void) {
 		if (!IsPolyfillRequired())
 			main(null);

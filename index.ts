@@ -1,5 +1,5 @@
-export import ISubjectObject = require("./ISubjectObject");
-export import SubjectObject = require("./SubjectObject");
-export import SubjectProcessor = require("./SubjectProcessor");
-export import SubjectArray = require("./SubjectArray");
-export import Utils = require("./Utils");
+export * from "./ISubjectObject";
+export * from "./SubjectObject";
+export * from "./SubjectProcessor";
+export * from "./SubjectArray";
+export * from "./Utils";

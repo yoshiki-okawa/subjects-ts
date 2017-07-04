@@ -1,6 +1,6 @@
-import ISubjectObject = require('./ISubjectObject');
+import { ISubjectObject } from './ISubjectObject';
 
-export = function SubjectObject<T>(): ISubjectObject {
+export function SubjectObject<T>(): ISubjectObject {
 	let f = function (value?: T) {
 		let argCount = arguments.length;
 
