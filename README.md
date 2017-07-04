@@ -35,6 +35,7 @@ let sa = new Subjects.SubjectArray<string>();
 sa.Push('a');
 let mapped = sa.Map(x => console.log(x));
 mapped.AddCallbackToOriginalSubjectArray('Push', str => mapped.ExecuteMapFunction(str));
+sa.Push('b');
 ```
 
 ### Browser Example
